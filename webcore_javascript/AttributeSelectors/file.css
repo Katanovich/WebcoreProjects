@@ -1,0 +1,52 @@
+input[type="number"] {
+  background-color: yellow;
+  color: red;
+  border-radius: 10px;
+  padding-left: 15px;
+}
+
+input[type="checkbox"] {
+  outline: 2px solid red;
+}
+
+input[disabled] {
+  background-color: green;
+  color: orange;
+}
+
+a:hover {
+  color: red;
+  text-transform: uppercase;
+}
+
+input:focus {
+  background-color: black;
+}
+
+li:first-child {
+  color: orange;
+  text-decoration: underline;
+}
+
+li:last-child {
+  color: green;
+  text-decoration: underline;
+}
+p::before {
+  content: "🚀";
+  color: red;
+}
+
+p::after {
+  content: "🚀";
+  color: red;
+}
+
+input::placeholder {
+  color: gold;
+  font-style: italic;
+}
+
+input {
+  color: aqua;
+}
