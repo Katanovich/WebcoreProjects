@@ -3,22 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <title>Регистрация iintoo</title>
-    <link rel="stylesheet" href="project2.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="main-wrapper">
       <div class="left-side">
         <div class="logo">iintoo <span>invest together</span></div>
-        <img src="img/template.jpg" alt="Background" class="hero-img" />
+        <img src="bg.jpg" alt="Background" class="blue-img" />
       </div>
 
       <div class="right-side">
         <h1 class="main-title">Get iintoo it today</h1>
         <p class="desc">There is no charge or obligation upon registration.</p>
 
-        <div class="social-row">
-          <div class="social-btn fb">Register with Facebook</div>
-          <div class="social-btn in">Register with LinkedIn</div>
+        <div class="social-media">
+          <div class="facebook">
+            <img src="facebook.svg" alt="FB" class="btn-icon" />
+            Register with Facebook
+          </div>
+          <div class="linkedin">
+            <img src="linkedin.svg" alt="LinkedIn" class="btn-icon" /> Register
+            with LinkedIn
+          </div>
         </div>
 
         <div class="separator">OR</div>
@@ -26,22 +32,24 @@
         <div class="input-row">
           <div class="input-box">
             <label>Email</label>
-            <input type="text" value="katana2812@gmail.com" />
+            <input type="text" placeholder="email" />
           </div>
           <div class="input-box">
             <label>Phone</label>
-            <input type="text" placeholder="Phone" />
+            <input type="number" placeholder="Phone" />
           </div>
         </div>
 
         <h2 class="sub-title">What type of investor are you?</h2>
         <p class="desc">Select the type of investor you are below.</p>
 
-        <div class="radio-row">
-          <label><input type="radio" name="inv" checked /> Individual</label>
-          <label><input type="radio" name="inv" /> Business</label>
-          <label><input type="radio" name="inv" /> IRA</label>
-          <label><input type="radio" name="inv" /> Trust</label>
+        <div class="radio-buttons">
+          <label
+            ><input type="radio" name="investor" checked /> Individual</label
+          >
+          <label><input type="radio" name="investor" /> Business</label>
+          <label><input type="radio" name="investor" /> IRA</label>
+          <label><input type="radio" name="investor" /> Trust</label>
         </div>
 
         <div class="hint-box">

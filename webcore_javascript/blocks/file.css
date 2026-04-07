@@ -1,0 +1,62 @@
+.inline-block {
+  display: inline-block;
+  border: 3px solid green;
+  background-color: lightgreen;
+  width: 100px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.block {
+  display: block;
+  border: 3px solid red;
+  background-color: lightcoral;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+}
+
+.none {
+  display: none;
+  border: 3px solid blue;
+  background-color: lightskyblue;
+  width: 100px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.inline {
+  display: inline;
+  border: 3px solid orange;
+  background-color: aquamarine;
+  width: 200px;
+  padding: 10px;
+  margin: 10px;
+}
+/* In inline class we can not change width and height */
+
+.flex {
+  display: flex;
+  border: 3px solid orange;
+  background-color: lightsalmon;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  height: 100px;
+  justify-content: center;
+}
+
+.inline-flex {
+  display: inline-flex;
+  box-sizing: border-box; /*content-box*/
+  border: 3px solid yellow;
+  background-color: pink;
+  color: black;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  height: 100px;
+  justify-content: center;
+}
+/* inline flex is dynamic , when we decrease the window it adapts to it*/
