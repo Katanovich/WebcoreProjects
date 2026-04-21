@@ -1,2 +1,2 @@
-# WebcoreProjects
-# WebcoreProjects
+# WebcoreProject
+Mobile first adaptive styling.
