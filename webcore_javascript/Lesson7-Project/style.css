@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+}
+
+.sidebar__main {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  width: 320px;
+  height: 100vh;
+  padding: 24px;
+  background-color: white;
+  box-shadow: 10px 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__section {
+  flex: 1;
+  font-size: 16px;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  list-style: none;
+  margin-top: 24px;
+  gap: 24px;
+}
+.nav__item a {
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+.nav__item--active a {
+  /* border-left: 3px solid aqua; */
+  color: black;
+}
+
+.nav__item--active a::before {
+  content: "";
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 3px;
+  height: 16px;
+  background-color: aqua;
+  left: -8px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 24px;
+  cursor: pointer;
+}
+.contacts__btn {
+  display: flex;
+}
+
+.contacts__onclick--container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contacts__onclick {
+  color: black;
+}
+.contacts__onclick--tel {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.contacts__btn {
+  display: flex;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.lang__container {
+  display: flex;
+  justify-content: flex-start;
+  border: none;
+}
+a {
+  text-decoration: none;
+}
+
+.lang__btn {
+  border: none;
+  background-color: white;
+}
+
+.lang__ru {
+  color: rgb(145, 133, 133);
+}
+/*
+
+Carefully put down classes in css!
+border-left: 3px solid aqua;
+box-shadow: do not forget to put "px" after 
+
+
+*/

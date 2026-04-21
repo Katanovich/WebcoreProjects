@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f4f4;
+  padding: 20px;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+.bg-section {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border-radius: 15px;
+}
+
+.bg-section__title {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: lightskyblue;
+}
+
+.example-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.example-box {
+  width: 200px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #eaeaea;
+  background-color: rgb(81, 97, 243);
+  border-radius: 15px;
+}
+
+.rgba {
+  background-color: rgba(71, 89, 154, 0.6);
+}
+
+.color {
+  background-color: #667eea;
+}
+
+.repeated {
+  width: 200px;
+  height: 150px;
+  background-repeat: repeat;
+  background-size: 40px 40px;
+  background-image: url(https://habsida-lms.s3.ap-northeast-2.amazonaws.com/webcore/logo.svg);
+}
+
+.cover {
+  width: 200px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(https://habsida-lms.s3.ap-northeast-2.amazonaws.com/webcore/logo.svg);
+}
+
+.contain {
+  width: 200px;
+  height: 150px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(https://habsida-lms.s3.ap-northeast-2.amazonaws.com/webcore/logo.svg);
+}
+
+.center {
+  width: 200px;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+  background-position: center;
+  background-color: #667eea;
+  background-image: url(https://habsida-lms.s3.ap-northeast-2.amazonaws.com/webcore/logo.svg);
+}
+
+.left {
+  width: 200px;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+  background-position: left top;
+  background-color: #667eea;
+  background-image: url(https://habsida-lms.s3.ap-northeast-2.amazonaws.com/webcore/logo.svg);
+}
+
+.right {
+  width: 200px;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+  background-position: right;
+  background-color: #667eea;
+  background-image: url(https://habsida-lms.s3.ap-northeast-2.amazonaws.com/webcore/logo.svg);
+}
+
+.linear {
+  width: 200px;
+  height: 150px;
+  background: linear-gradient(to right, #269819, #764ba2);
+}
+.radial {
+  width: 200px;
+  height: 150px;
+  background: radial-gradient(circle, #42ac33, #764ba2);
+}
+.conic {
+  width: 200px;
+  height: 150px;
+  background: conic-gradient(#d8d8d8, #764ba2, #667eea, #269819);
+}
