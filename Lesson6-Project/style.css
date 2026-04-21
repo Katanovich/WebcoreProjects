@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%; /*mobile first*/
+  display: flex;
+  flex-direction: column;
+  padding: 16px; /* padding: 16px; for mobile devices, box-sizing should be border-box */
+  overflow-x: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.header__left,
+.header__right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header {
+  position: relative;
+}
+
+.header__left::after {
+  content: "";
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  align-items: center;
+  width: 2px;
+  height: 34px;
+  background-color: aqua;
+}
+
+h1 {
+  margin-top: 20px;
+  border-left: 4px solid aqua;
+  padding-left: 16px;
+  border-radius: 0 4px 4px 0;
+}
+
+.btn {
+  display: flex;
+  border: none;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  overflow-x: auto;
+  list-style: none;
+  padding: 10px;
+  flex-shrink: 0;
+}
+
+.nav__item a {
+  text-decoration: none;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  white-space: nowrap;
+  margin: 20px;
+  min-width: max-content;
+}
+
+.nav__item--active a {
+  border: solid 2px #41f6d7;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.header__center {
+  display: none;
+  gap: 16px;
+}
+.content__text--hidden {
+  display: none;
+}
+
+.read-more {
+  text-decoration: none;
+}
+.img__text {
+  display: none;
+}
+
+.image {
+  display: block;
+}
+
+@media (min-width: 769px) {
+  .header__center {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .content__text--hidden {
+    display: flex;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+  }
+  .content__text {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  .image {
+    flex: 1;
+  }
+  .img__text {
+    display: none;
+  }
+
+  .header__left::after {
+    display: none;
+  }
+
+  .header__left {
+    position: relative;
+    align-items: center;
+  }
+  .header__left--burger::after {
+    content: "";
+    display: block;
+    text-align: center;
+    background-color: #41f6d7;
+    width: 2px;
+    height: 34px;
+    /* position: absolute; */
+    margin-left: 14px;
+    top: 50%;
+    left: 50%;
+  }
+}
+
+@media (min-width: 1120px) {
+  .header__center {
+    display: none;
+  }
+  .img__text {
+    display: flex;
+    margin-right: 16px;
+  }
+  .header__left--burger::after {
+    display: none;
+  }
+}
+/*
+Mobile-first technique:
+the body tag: {
+display: flex;
+flex-direction: column;
+width:100%;
+overflow-x: hidden; (the content does not flow aside)
+padding in flex-blocks should be 16px
+}
+For horizontal scroll in nav-list:
+overflow-x:auto
+all in all blocks should be flex except imgs, they should be blocks(like natural div blocks)
+*/
+
+/*Difficulties I met: 
+1) Width 100% and padding 16px in *, should put it in body.
+2) Order of button blocks in header section.
+3) Margin-left:auto for the header-center block in order to push it to the right corner.
+4) Did not put content and Image in one container! then the content container should also 
+contain own container!
+5) Readmore svg was downloaded
+*/
