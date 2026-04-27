@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lintoo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="left-page">
+        <div class="image-container">
+          <img src="bg.jpg" alt="background image" class="background-image" />
+          <img src="logo.svg" alt="logo" class="logo" />
+        </div>
+      </div>
+      <div class="right-page">
+        <div class="upper-paragraph">
+          <h1>Get iintoo today</h1>
+          <p>There is no charge or obligation upon registration</p>
+        </div>
+        <div class="social-container">
+          <div class="facebook-container">
+            <button class="btn-media btn-facebook" type="button">
+              <img src="facebook.svg" alt="facebook" class="facebook-icon" />
+              <span>Register with Facebook</span>
+            </button>
+          </div>
+          <div class="linkedin-container">
+            <button class="btn-media btn-linkedin" type="button">
+              <img src="linkedin.svg" alt="linkedin" class="linkedin-icon" />
+              <span>Register with Linkedin</span>
+            </button>
+          </div>
+        </div>
+        <div class="divider">
+          <div class="or-divider">OR</div>
+        </div>
+        <div class="input-section">
+          <div class="email-container">
+            <label for="email-input" class="email-text">Email</label>
+            <input
+              type="email"
+              id="email-input"
+              placeholder="katana2711@gmail.com"
+            />
+          </div>
+          <div class="phone-container">
+            <label for="phone-input" class="phone-text">Phone</label>
+            <input type="tel" id="phone-input" placeholder="+8210-00-00-77" />
+          </div>
+        </div>
+        <div class="investor-paragraph">
+          <h2>What type of investors are you?</h2>
+          <p>Select the type of investor you are below</p>
+        </div>
+        <div class="radio-buttons">
+          <label for="investor-individual">
+            <input
+              type="radio"
+              name="radio-group"
+              value="Individual"
+              id="investor-individual"
+            />
+            <span class="radio-labels">Individual</span>
+            <span
+              class="icon"
+              data-tooltip="This is a tooltip text  This is a tooltip text This is a tooltip text This is a tooltip text This is a tooltip text"
+              >i</span
+            >
+          </label>
+          <label for="business-investor">
+            <input
+              type="radio"
+              name="radio-group"
+              value="Business"
+              id="business-investor"
+            />
+            <span class="radio-labels">Business</span>
+            <span
+              class="icon"
+              data-tooltip="This is a tooltip text This is a tooltip text This is a tooltip text This is a tooltip text This is a tooltip text"
+              >i</span
+            >
+          </label>
+          <label for="ira-investor">
+            <input
+              type="radio"
+              name="radio-group"
+              value="IRA"
+              id="ira-investor"
+            />
+            <span class="radio-labels">IRA</span>
+            <span
+              class="icon"
+              data-tooltip="This is a tooltip text This is a tooltip text This is a tooltip text This is a tooltip text This is a tooltip text "
+              >i</span
+            >
+          </label>
+          <label for="trust-investor">
+            <input
+              type="radio"
+              name="radio-group"
+              value="Trust"
+              id="trust-investor"
+            />
+            <span class="radio-labels">Trust</span>
+            <span
+              class="icon"
+              data-tooltip="This is a tooltip text This is a tooltip text This is a tooltip text This is a tooltip text This is a tooltip text This is a tooltip text"
+              >i</span
+            >
+          </label>
+        </div>
+        <div class="checkbox-container">
+          <input type="checkbox" id="terms" name="agree" class="checkbox" />
+          <label for="terms">
+            I agree to terms and recieving notifications from iintoo
+            <a href="#" class="view-terms"> View full terms </a>
+          </label>
+        </div>
+
+        <button class="submit" type="submit">Create account</button>
+      </div>
+    </div>
+  </body>
+</html>
